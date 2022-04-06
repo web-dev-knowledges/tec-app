@@ -1,5 +1,5 @@
 import { makeAutoObservable } from 'mobx'
-import { tableData, tableData2 } from '../mock/mock'
+import { singaporeData, vietnameseData } from '../mock/mock'
 import { Pricing } from '../models/pricing.model'
 
 class PricingStore {
@@ -13,11 +13,11 @@ class PricingStore {
   getPricingData(selectedLocation: string): Pricing[] {
     switch (selectedLocation) {
       case 'singapore':
-        return tableData as Pricing[]
+        return singaporeData as Pricing[]
       case 'vietnam':
-        return tableData2 as Pricing[]
+        return vietnameseData as Pricing[]
       default:
-        return tableData as Pricing[]
+        return []
     }
   }
 }

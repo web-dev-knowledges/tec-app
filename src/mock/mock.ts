@@ -1,4 +1,4 @@
-export const tableData = [
+export const singaporeData = [
   {
     type: 'Business Address',
     isHighlighted: false,
@@ -46,7 +46,7 @@ export const tableData = [
   },
 ]
 
-export const tableData2 = [
+export const vietnameseData = [
   {
     type: 'Business Address',
     isHighlighted: false,
